@@ -40,6 +40,8 @@ A fuzzy git-add. Use it to add changed but not updated files that are already tr
 
 git-fuzzyadd accepts multiple parameters and will consider each as an independent pattern to search for. 
 
+Example:
+
     david@Seven:~/example$ git status
     # On branch master
     # Changed but not updated:
@@ -74,7 +76,7 @@ We'll try to add `posts_controller.rb`:
             app/controller/user_controller.rb
     nothing happened.
 
-If you manually check, `post` also matches both files: *a**p**p/c**o**ntroller/u**s**er_con**t**roller.rb*. If we use `posts` it matches only one file, so let's do that:
+Strange, but if you check, `post` indeed matches both files: *a**p**p/c**o**ntroller/u**s**er_con**t**roller.rb*. If we use `posts` it matches only one file, so let's do that:
 
     david@Seven:~/example$ git fuzzyadd posts
     added app/controller/posts_controller.rb.

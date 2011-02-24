@@ -76,7 +76,7 @@ We'll try to add `posts_controller.rb`:
 
 If you manually check, `post` also matches both files: *a**p**p/c**o**ntroller/u**s**er_con**t**roller.rb*. If we use `posts` it matches only one file, so let's do that:
 
-    david@Seven:/tmp/example$ git fuzzyadd posts
+    david@Seven:~/example$ git fuzzyadd posts
     added app/controller/posts_controller.rb.
 
 Let's look at the status now:
